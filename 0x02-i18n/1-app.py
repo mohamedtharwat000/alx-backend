@@ -19,7 +19,7 @@ app.config.from_object(Config)
 
 
 @app.route("/", methods=["GET"])
-def index():
+def index() -> str:
     """GET /"""
     return render_template("1-index.html")
 
